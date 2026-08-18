@@ -9,6 +9,16 @@
 特别感谢原作者 [AlabasterLeking](https://github.com/AlabasterLeking/Crabbers-Delight) 创作了 Crabber's Delight
 （含全部代码、纹理与模型资产），本 Fabric 移植版建立在原作者的工作之上。
 
+## 游戏截图
+
+![游戏截图 1](images/screenshot_1.jpg)
+
+![游戏截图 2](images/screenshot_2.jpg)
+
+![游戏截图 3](images/screenshot_3.jpg)
+
+![游戏截图 4](images/screenshot_4.jpg)
+
 ## 依赖
 
 | 模组 | 类型 | 说明 |
