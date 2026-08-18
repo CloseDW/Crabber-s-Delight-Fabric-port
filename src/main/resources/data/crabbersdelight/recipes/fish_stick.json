@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "ingredients": [
+    { "item": "minecraft:stick" },
+    { "tag": "c:cooked_fishes" }
+  ],
+  "result": {
+    "item": "crabbersdelight:fish_stick"
+  }
+}

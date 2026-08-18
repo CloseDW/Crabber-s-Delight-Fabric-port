@@ -1,0 +1,13 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "crabbersdelight:cooked_tropical_fish"
+    }
+  ],
+  "result": [
+    { "count": 2, "item": "crabbersdelight:cooked_tropical_fish_slice" },
+    { "item": "crabbersdelight:fish_bones" }
+  ],
+    "tool": { "tag": "c:tools/knives" }
+}

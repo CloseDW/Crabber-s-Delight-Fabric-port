@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "alabaster.crabbersdelight.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MatchToolLootConditionMixin",
+    "PlayerEntityMixin",
+    "SheepEntityMixin",
+    "ServerPlayNetworkHandlerMixin",
+    "ServerPlayerInteractionManagerMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

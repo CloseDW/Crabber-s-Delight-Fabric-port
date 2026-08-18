@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "crabbersdelight",
+  "version": "${version}",
+  "name": "Crabber's Delight",
+  "description": "A maritime addon for Farmer's Delight! (Unofficial Fabric port)",
+  "authors": [
+    "AlabasterLeking",
+    "CloseDW"
+  ],
+  "contact": {
+    "homepage": "https://github.com/CloseDW",
+    "sources": "https://github.com/CloseDW/crabbers-delight-fabric"
+  },
+  "license": "MIT",
+  "icon": "assets/crabbersdelight/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "alabaster.crabbersdelight.CrabbersDelightFabric"
+    ],
+    "client": [
+      "alabaster.crabbersdelight.client.CrabbersDelightFabricClient"
+    ],
+    "jei_mod_plugin": [
+      "alabaster.crabbersdelight.integration.jei.JEIPlugin"
+    ],
+    "fabric-datagen": [
+      "alabaster.crabbersdelight.client.CrabbersDelightFabricDataGenerator"
+    ]
+  },
+  "mixins": [
+    "crabbersdelight.mixins.json",
+    {
+      "config": "crabbersdelight.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*",
+    "farmersdelight": "*",
+    "forgeconfigapiport": ">=8.0.0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1,
+  "ingredients": [
+    { "tag": "c:cooked_fishes" },
+    { "item": "minecraft:kelp" },
+    { "item": "minecraft:kelp" },
+    { "item": "minecraft:kelp" }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "crabbersdelight:stuffed_nautilus_shell"
+  }
+}

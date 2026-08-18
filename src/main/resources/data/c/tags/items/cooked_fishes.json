@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#c:cooked_fishes/cod",
+    "#c:cooked_fishes/salmon",
+    "crabbersdelight:cooked_tropical_fish",
+    "crabbersdelight:cooked_tropical_fish_slice",
+    "crabbersdelight:cooked_pufferfish_slice"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "key": {
+    "m": { "item": "farmersdelight:milk_bottle" },
+    "b": { "item": "minecraft:bowl" },
+    "c": { "item": "crabbersdelight:coral_fragments" }
+  },
+  "pattern": [
+    " m ",
+    "ccc",
+    " b "
+  ],
+  "result": {
+    "item": "crabbersdelight:coral_crunch"
+  },
+  "show_notification": true
+}

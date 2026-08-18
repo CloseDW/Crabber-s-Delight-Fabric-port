@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    { "item": "crabbersdelight:palm_planks" }
+  ],
+  "result": {
+    "item": "crabbersdelight:palm_button"
+  }
+}

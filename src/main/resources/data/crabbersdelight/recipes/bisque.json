@@ -1,0 +1,16 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1,
+  "ingredients": [
+    [ { "tag": "crabbersdelight:cooked_seafood" }, { "tag": "crabbersdelight:raw_seafood" } ],
+    { "item": "farmersdelight:onion" },
+    { "item": "farmersdelight:rice" },
+    { "item": "minecraft:carrot" },
+    { "tag": "c:milk/milk" }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "crabbersdelight:bisque"
+  }
+}

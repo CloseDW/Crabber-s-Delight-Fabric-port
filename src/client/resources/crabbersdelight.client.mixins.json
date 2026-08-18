@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "alabaster.crabbersdelight.client.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [],
+  "client": [
+    "ClientPlayerInteractionManagerMixin",
+    "GameRendererMixin",
+    "ItemRendererMixin",
+    "TexturedRenderLayersMixin",
+    "HangingSignEditScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

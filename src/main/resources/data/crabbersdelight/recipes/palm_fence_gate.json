@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "W": { "item": "crabbersdelight:palm_planks" },
+    "#": { "item": "minecraft:stick" }
+  },
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "result": {
+    "item": "crabbersdelight:palm_fence_gate"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "_": { "item": "crabbersdelight:palm_slab" },
+    "D": { "item": "crabbersdelight:palm_trapdoor" }
+  },
+  "pattern": [
+    "___",
+    "D D",
+    "___"
+  ],
+  "result": {
+    "item": "crabbersdelight:palm_cabinet"
+  },
+  "show_notification": true
+}
