@@ -17,8 +17,6 @@
 
 ![游戏截图 3](images/screenshot_3.jpg)
 
-![游戏截图 4](images/screenshot_4.jpg)
-
 ## 依赖
 
 | 模组 | 类型 | 说明 |
