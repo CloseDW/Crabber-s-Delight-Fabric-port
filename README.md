@@ -1,50 +1,46 @@
-# Crabber's Delight（Fabric 移植版）
+# Crabber's Delight（Fabric Port）
 
-> 非官方 Fabric 移植版本。原模组 **Crabber's Delight** 由 [AlabasterLeking](https://github.com/AlabasterLeking/Crabbers-Delight) 开发
+> Unofficial Fabric port. The original mod **Crabber's Delight** was developed by [AlabasterLeking](https://github.com/AlabasterLeking/Crabbers-Delight).
+> This repository ports the original gameplay and balance to **Fabric 1.20.1**.
 
-## 致谢
+## Introduction
 
-特别感谢原作者 [AlabasterLeking](https://github.com/AlabasterLeking/Crabbers-Delight) 创作了 Crabber's Delight
-（含全部代码、纹理与模型资产），本 Fabric 移植版本建立在原作者的工作之上。
+Crabber's Delight is an ocean-themed expansion for Farmer's Delight: it adds crabs, shrimp, clams and other seafood ingredients,
+as well as items such as coconuts and palm wood, along with a complete set of cooking recipes (crafting, cooking pot, cutting).
 
-## 游戏截图
+## Dependencies
 
-![游戏截图 1](images/screenshot_1.jpg)
-
-![游戏截图 2](images/screenshot_2.jpg)
-
-![游戏截图 3](images/screenshot_3.jpg)
-
-## 依赖
-
-| 模组 | 类型 | 说明 |
+| Mod | Type | Description |
 | --- | --- | --- |
-| [Farmer's Delight Refabricated](https://modrinth.com/mod/farmers-delight-refabricated) | 必需 | 原模组前置 |
-| [Forge Config API Port](https://modrinth.com/mod/forge-config-api-port) | 必需 | 提供配置 API |
+| [Farmer's Delight Refabricated](https://modrinth.com/mod/farmers-delight-refabricated) | Required | Prerequisite of the original mod |
+| [Forge Config API Port](https://modrinth.com/mod/forge-config-api-port) | Required | Provides Forge-style configuration API |
 
-## 已实现功能
+## Implemented Features
 
-- 螃蟹：自然生成、变体、可装桶，蟹钳工具
-- 捕蟹笼：鱼饵/鱼饵桶、战利品表
-- 棕榈树：原木/木板/楼梯/台阶/栅栏/门/活板门/告示牌/船等
-- 椰子头盔、珍珠项链
-- 全部食材与食谱
-- 贝壳
-- 独立创造模式标签页
+- Crabs: natural spawning, variants, bucketable, crab claw tools
+- Crab Trap: bait / bait bucket, loot tables, aquatic biome bonuses
+- Full palm wood set: log/planks/stairs/slabs/fence/door/trapdoor/sign/boat, etc.
+- Coconut helmet, pearl necklace
+- All ingredients and Farmer's Delight recipes
+- Seashells and underwater seashell world generation
+- Independent creative tab
 
-## 与原版（Forge）的差异
-- 穿戴效果刷新：每秒刷新、每次 16 秒
+## Differences from the Original (Forge)
 
-## 构建
+- Item ID fix: the Forge-side `palm_trapdoor_bottom` is `palm_trapdoor` on the Fabric side
+- Equipment effect refresh strategy: refreshes every second, lasting 16 seconds each time, reducing per-tick performance cost
+- Uses the Fabric ecosystem to implement registration, world generation and Mixin compatibility layer
 
-需要 **Java 21+**：
+## Building
+
+Requires **Java 21+** (the Gradle wrapper downloads the rest automatically):
 
 ```bash
 ./gradlew build
 ```
 
-产物位于 `build/libs/`。
+The output is in `build/libs/`.
 
-## 许可证
+## License
 
-[MIT](LICENSE)。原代码版权归 AlabasterLeking（2023）；Fabric 移植部分版权归 CloseDW（2026）。
+[MIT](LICENSE). The original code is copyrighted by AlabasterLeking (2023); the Fabric port is copyrighted by CloseDW (2026).
