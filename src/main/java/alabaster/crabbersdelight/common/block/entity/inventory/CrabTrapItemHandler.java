@@ -4,6 +4,8 @@ import alabaster.crabbersdelight.common.tags.CDModTags;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.nbt.NbtList;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.collection.DefaultedList;
@@ -77,5 +79,38 @@ public class CrabTrapItemHandler extends SimpleInventory {
 
     public DefaultedList<ItemStack> getItems() {
         return this.stacks;
+    }
+
+    /*
+     * 覆写序列化：SimpleInventory的toNbtList丢失槽位信息
+     */
+    @Override
+    public NbtList toNbtList() {
+        NbtList nbtList = new NbtList();
+        for (int i = 0; i < this.size(); i++) {
+            ItemStack stack = this.getStack(i);
+            if (!stack.isEmpty()) {
+                NbtCompound nbt = new NbtCompound();
+                nbt.putInt("Slot", i);
+                stack.writeNbt(nbt);
+                nbtList.add(nbt);
+            }
+        }
+        return nbtList;
+    }
+
+    /*
+     * 覆写反序列化：按保存的槽位索引逐格恢复
+     */
+    @Override
+    public void readNbtList(NbtList nbtList) {
+        this.clear();
+        for (int i = 0; i < nbtList.size(); i++) {
+            NbtCompound nbt = nbtList.getCompound(i);
+            int slot = nbt.getInt("Slot");
+            if (slot >= 0 && slot < this.size()) {
+                this.setStack(slot, ItemStack.fromNbt(nbt));
+            }
+        }
     }
 }
